@@ -22,7 +22,8 @@ public class PlayerMovement : MonoBehaviour {
 
 		// stopping stuff from happening cause they get in the way jesus
 		r.freezeRotation = true;
-		Screen.lockCursor = true;
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
