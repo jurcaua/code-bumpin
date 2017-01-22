@@ -53,6 +53,12 @@ public class AudioPeer : MonoBehaviour {
 		GetAmplitude ();
 	}
 
+	IEnumerator SlowDown(float slowDownTime){
+		source.pitch = 0.5f;
+		yield return new WaitForSeconds (slowDownTime);
+		source.pitch = 1f;
+	}
+
 	void GetSpectrumAudioSource(){
 		source.GetSpectrumData (samples, 0, FFTWindow.Blackman);
 	}

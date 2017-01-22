@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour {
 
@@ -26,6 +27,8 @@ public class PlayerManager : MonoBehaviour {
 		if (wallsTouching >= 3) {
 			Time.timeScale = 0; // for now just like pause this stuff i guess??? make an game over screen later
 			Debug.Log("GAME OVER");
+			SceneManager.LoadScene ("startMenu");
+
 		}
 	}
 

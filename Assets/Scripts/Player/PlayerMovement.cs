@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (r.velocity.y > maxVelY) { // dont go to fast my friend
 			r.velocity = new Vector3 (r.velocity.x, maxVelY, r.velocity.z);
 		}
-		Debug.Log(r.velocity); // checkin ur no over the speed limit good sir
+		//Debug.Log(r.velocity); // checkin ur no over the speed limit good sir
 		if (GroundedChecker.onGround && Input.GetButtonDown("Jump")){ // are u legally allowed to jump? i hope so
 //			Vector3 jumpDirection = transform.position - AveragePosition ();
 //			Debug.Log (jumpDirection);

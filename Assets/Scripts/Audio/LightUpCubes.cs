@@ -5,6 +5,8 @@ using UnityEngine;
 public class LightUpCubes : MonoBehaviour {
 
 	public bool useAmp = true;
+	public bool useSamples = false;
+	public Material lightUpMaterial;
 
 	public float minEmission = 0f;
 	public float maxEmission = 0.5f;
@@ -15,7 +17,8 @@ public class LightUpCubes : MonoBehaviour {
 	void Start () {
 		cubes = new Material[transform.childCount];
 		for (int i = 0; i < cubes.Length; i++) {
-			cubes [i] = transform.GetChild (i).gameObject.GetComponentInChildren<MeshRenderer>().material;
+			cubes [i] = transform.GetChild (i).gameObject.GetComponentInChildren<MeshRenderer> ().material; //lightUpMaterial;
+			//transform.GetChild (i).gameObject.GetComponentInChildren<MeshRenderer> ().material = cubes [i];
 		}
 	}
 	
@@ -27,9 +30,16 @@ public class LightUpCubes : MonoBehaviour {
 				Color color = new Color (lerpedValue, lerpedValue, lerpedValue);
 				cubes [i].SetColor ("_EmissionColor", color);
 			}
-		} else {
+		} else if (useSamples){
 			for (int i = 0; i < cubes.Length; i++) {
-				float lerpedValue = Mathf.Lerp (minEmission, maxEmission, AudioPeer.audioBandBuffer [i]);
+				float lerpedValue = Mathf.Lerp (minEmission, maxEmission, AudioPeer.samples[i] * 5);
+				Debug.Log (i);
+				Color color = new Color (lerpedValue, lerpedValue, lerpedValue);
+				cubes [i].SetColor ("_EmissionColor", color);
+			}
+		} else{
+			for (int i = 0; i < cubes.Length; i++) {
+				float lerpedValue = Mathf.Lerp (minEmission, maxEmission, AudioPeer.audioBandBuffer[i]);
 				Color color = new Color (lerpedValue, lerpedValue, lerpedValue);
 				cubes [i].SetColor ("_EmissionColor", color);
 			}
