@@ -25,7 +25,9 @@ public class AudioPeer : MonoBehaviour {
 	public float startBufferDecrease = 0.005f;
 	public float bufferDecreaseMultiplier = 1.2f;
 
-	private AudioSource source;
+	private ToPlay toPlay;
+
+	[HideInInspector] public AudioSource source;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +44,14 @@ public class AudioPeer : MonoBehaviour {
 		source = GetComponent<AudioSource> ();
 
 		AudioProfile (audioProfile);
+
+		if (GameObject.FindGameObjectWithTag ("ToPlay") != null) {
+			toPlay = GameObject.FindGameObjectWithTag ("ToPlay").GetComponent<ToPlay> ();
+			if (toPlay != null && toPlay.clipToPlay != null) {
+				source.clip = toPlay.clipToPlay;
+				source.Play ();
+			}
+		}
 	}
 	
 	// Update is called once per frame

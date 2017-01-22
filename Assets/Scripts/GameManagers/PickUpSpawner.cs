@@ -9,6 +9,8 @@ public class PickUpSpawner : MonoBehaviour {
 
 	public float hourglassAmpMin = 0.3f;
 
+	private int pastPickupIndex = 1;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log (pickups.Length);
@@ -32,10 +34,16 @@ public class PickUpSpawner : MonoBehaviour {
 
 			Debug.Log(AudioPeer.amplitude);
 			Debug.Log(pickups [randPickupIndex].name);
-			if (pickups [randPickupIndex].name == "HourGlassPickup" && AudioPeer.amplitude < hourglassAmpMin) {
+			if ((pickups [randPickupIndex].name == "HourGlassPickup" && AudioPeer.amplitude < hourglassAmpMin)) {
 				found = false;
+				if (pastPickupIndex == 1 && randPickupIndex == 1){
+					randPickupIndex = 0;
+					found = true;
+				}
 			}
 		} while (!found);
+
+		pastPickupIndex = randPickupIndex;
 
 		Instantiate (pickups [randPickupIndex], spawnPoints [randSpawnPointIndex].transform.position, spawnPoints[randSpawnPointIndex].transform.rotation);
 	}
