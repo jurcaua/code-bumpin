@@ -38,5 +38,9 @@ public class CameraMovement : MonoBehaviour {
 				Mathf.Clamp (cameraFollow.transform.position.y, -8 + player.transform.position.y, 30 + player.transform.position.y), 
 				cameraFollow.transform.position.z
 			);
+
+		Vector3 playerToCam = player.transform.position - transform.position;
+		playerToCam = playerToCam.normalized;
+		transform.rotation = Quaternion.LookRotation (playerToCam);
 	}
 }
