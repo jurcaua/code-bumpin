@@ -73,9 +73,8 @@ public class GameController : MonoBehaviour {
 			Destroy (audioPeer.transform.GetChild (i).gameObject);
 		}
 
-		if (SceneManager.GetActiveScene ().name == "main") {
-			toPlay.clipToPlay = clip;
-		}
+		toPlay.clipToPlay = clip;
+
 		SceneManager.LoadSceneAsync ("main");
 	}
 }
