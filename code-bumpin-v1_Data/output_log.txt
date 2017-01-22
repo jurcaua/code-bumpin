@@ -21,7 +21,7 @@ Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v
 Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.792 seconds
+- Completed reload, in  0.959 seconds
 Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
