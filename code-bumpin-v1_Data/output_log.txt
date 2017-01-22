@@ -2,28 +2,169 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
     Vendor:   Intel
-    VRAM:     2154 MB
-    Driver:   20.19.15.4352
+    VRAM:     2146 MB
+    Driver:   21.20.16.4526
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.792 seconds
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\jurcaua\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\System.dll (this message is harmless)
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Charmaine\Documents\GitHub\uoft-hacks-16\code-bumpin-v1_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.070544 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at GameController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3350 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 3.684141 ms
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.2204779
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PushBackPickUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 607.
+Total: 3.750785 ms (FindLiveObjects: 0.032088 ms CreateObjectMapping: 0.020804 ms MarkObjects: 0.230258 ms  DeleteObjects: 3.466576 ms)
+
+0.2304111
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PushBackPickUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.2322526
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HourGlassPickup
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.2560075
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PushBackPickUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.3106535
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HourGlassPickup
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.08473045
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PushBackPickUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.4536183
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HourGlassPickup
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.3711633
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PushBackPickUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GAME OVER
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.794093 ms
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 4532.
+Total: 0.906930 ms (FindLiveObjects: 0.222148 ms CreateObjectMapping: 0.049718 ms MarkObjects: 0.585344 ms  DeleteObjects: 0.048308 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
