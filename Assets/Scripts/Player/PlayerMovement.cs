@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float maxVelY = 15f;
 
 	private Rigidbody r;
+	private PlayerManager playerManager;
 
 	private float horizontal;
 	private float vertical;
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		r = GetComponent<Rigidbody> ();
+		playerManager = GetComponent<PlayerManager> ();
 
 		// stopping stuff from happening cause they get in the way jesus
 		r.freezeRotation = true;
@@ -29,6 +31,10 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Jump (); // check for jumps
+
+		if (Input.GetKeyDown (KeyCode.R)) {
+			playerManager.GameOver ();
+		}
 	}
 
 	void FixedUpdate() {

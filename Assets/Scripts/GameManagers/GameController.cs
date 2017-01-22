@@ -14,6 +14,10 @@ public class GameController : MonoBehaviour {
 	private float currentTime = 0f;
 
 	private AudioPeer audioPeer;
+	private ToPlay toPlay;
+
+	public string minutesStr;
+	public string secondsStr;
 
 	// Use this for initialization
 	void Start () {
@@ -23,9 +27,13 @@ public class GameController : MonoBehaviour {
 			spawner.SpawnPickup ();
 		}
 
-		songSelectionPanel.SetActive(false);
-
 		audioPeer = GameObject.FindGameObjectWithTag ("AudioPeer").GetComponent<AudioPeer> ();
+		toPlay = GameObject.FindGameObjectWithTag ("ToPlay").GetComponent<ToPlay> ();
+
+		if (SceneManager.GetActiveScene ().name == "startMenu") {
+			songSelectionPanel.SetActive (false);
+			audioPeer.source.clip = toPlay.mainMenuSong;
+		}
 	}
 	
 	// Update is called once per frame
@@ -47,8 +55,8 @@ public class GameController : MonoBehaviour {
 		float minutes = Mathf.Round (currentTime / 60);
 		float seconds = Mathf.Round (currentTime % 60);
 
-		string minutesStr = minutes.ToString();
-		string secondsStr = seconds.ToString();
+		minutesStr = minutes.ToString();
+		secondsStr = seconds.ToString();
 
 		if (seconds % 10 == seconds) {
 			secondsStr = "0" + secondsStr;
@@ -65,7 +73,9 @@ public class GameController : MonoBehaviour {
 			Destroy (audioPeer.transform.GetChild (i).gameObject);
 		}
 
-		audioPeer.source.clip = clip;
+		if (SceneManager.GetActiveScene ().name == "main") {
+			toPlay.clipToPlay = clip;
+		}
 		SceneManager.LoadSceneAsync ("main");
 	}
 }

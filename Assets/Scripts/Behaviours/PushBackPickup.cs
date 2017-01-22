@@ -38,10 +38,10 @@ public class PushBackPickup : MonoBehaviour {
             walls[i].transform.position += walls[i].transform.position * PushBackValue;
         }
         Destroy(gameObject);
-		//if (numSpawned == 0) {
+		if (numSpawned == 0) {
 			spawner.SpawnPickup ();
 			numSpawned++;
-		//}
+		}
     }
 
 }

@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class ToPlay : MonoBehaviour {
 
+	public AudioClip mainMenuSong;
+
 	public AudioClip clipToPlay;
+
+	private static ToPlay instance = null;
+
+	void Awake() {
+		if (instance != null && instance != this) {
+			Destroy (this.gameObject);
+			return;
+		} else {
+			instance = this;
+		}
+		DontDestroyOnLoad (this.gameObject);
+	}
 
 	// Use this for initialization
 	void Start () {
-		DontDestroyOnLoad (this);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public static ToPlay Instance{
+		get { return instance; }
 	}
 }
