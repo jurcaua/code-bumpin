@@ -8,6 +8,7 @@ public class PushBackPickup : MonoBehaviour {
 
 	private GameObject[] walls;
 	private GameObject movingWalls;
+	private MovingWalls movingWallsScript;
 
 	private PickUpSpawner spawner;
 
@@ -18,6 +19,7 @@ public class PushBackPickup : MonoBehaviour {
 		spawner = GameObject.FindGameObjectWithTag ("GameController").GetComponent<PickUpSpawner>();
 
 		movingWalls = GameObject.FindGameObjectWithTag ("MovingWalls");
+		movingWallsScript = GameObject.FindGameObjectWithTag ("MovingWalls").GetComponent<MovingWalls>();
 
 		walls = new GameObject[movingWalls.transform.childCount];
         for (int i = 0; i < walls.Length; i++)
@@ -33,10 +35,8 @@ public class PushBackPickup : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        for (int i = 0; i < walls.Length; i++)
-        {
-            walls[i].transform.position += walls[i].transform.position * PushBackValue;
-        }
+		movingWallsScript.PushBack (PushBackValue);
+
         Destroy(gameObject);
 		if (numSpawned == 0) {
 			spawner.SpawnPickup ();

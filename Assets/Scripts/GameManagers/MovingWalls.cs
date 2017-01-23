@@ -38,4 +38,11 @@ public class MovingWalls : MonoBehaviour {
 			playerManager.GameOver ();
 		}
 	}
+
+	public void PushBack(float pushBackValue){
+		for (int i = 0; i < walls.Length; i++)
+		{
+			walls[i].transform.position += walls[i].transform.position * pushBackValue;
+		}
+	}
 }

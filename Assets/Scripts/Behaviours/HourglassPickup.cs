@@ -10,9 +10,11 @@ public class HourglassPickup : MonoBehaviour {
 	// can only spawn when amp is over some value
 
 	public float slowDownTime = 3f;
+	public float pushBackValue = 0.1f;
 
 	private PickUpSpawner spawner;
 	private AudioPeer audioPeer;
+	private MovingWalls movingWalls;
 
 	private AudioSource source;
 
@@ -24,6 +26,8 @@ public class HourglassPickup : MonoBehaviour {
 
 		audioPeer = GameObject.FindGameObjectWithTag ("AudioPeer").GetComponent<AudioPeer>();
 
+		movingWalls = GameObject.FindGameObjectWithTag ("MovingWalls").GetComponent<MovingWalls> ();
+
 		source = GameObject.FindGameObjectWithTag ("AudioPeer").GetComponent<AudioSource>();
 	}
 	
@@ -34,6 +38,8 @@ public class HourglassPickup : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider){
 		audioPeer.StartCoroutine ("SlowDown", slowDownTime);
+
+		movingWalls.PushBack (pushBackValue);
 
 		Destroy(gameObject);
 		if (numSpawned == 0) {
