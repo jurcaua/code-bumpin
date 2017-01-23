@@ -21,9 +21,70 @@ Platform assembly: E:\Docs\Unity\code-bumpin\code-bumpin-v2_Data\Managed\UnityEn
 Loading E:\Docs\Unity\code-bumpin\code-bumpin-v2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: E:\Docs\Unity\code-bumpin\code-bumpin-v2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading E:\Docs\Unity\code-bumpin\code-bumpin-v2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.042 seconds
+- Completed reload, in  0.039 seconds
 Platform assembly: E:\Docs\Unity\code-bumpin\code-bumpin-v2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Docs\Unity\code-bumpin\code-bumpin-v2_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 59Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.010071 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at GameController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4014 -> priority: 1 
+  Thread -> id: 2d8c -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at InstantiateCubes.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 2.759772 ms
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.216061
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PushBackPickUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 607.
+Total: 11.664675 ms (FindLiveObjects: 0.044903 ms CreateObjectMapping: 0.021941 ms MarkObjects: 0.252071 ms  DeleteObjects: 11.345248 ms)
+
+GAME OVER
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.594714 ms
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 4546.
+Total: 0.577620 ms (FindLiveObjects: 0.168897 ms CreateObjectMapping: 0.034442 ms MarkObjects: 0.331417 ms  DeleteObjects: 0.042352 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
